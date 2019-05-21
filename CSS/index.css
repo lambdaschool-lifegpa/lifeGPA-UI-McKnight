@@ -202,15 +202,16 @@ p {
 @media (max-width: 600px) {
   .top-container .top-img .mobile {
     display: flex;
-    width: 700px;
+    width: 600px;
     height: auto;
     left: 0;
+    max-width: 100vw;
   }
 }
 .top-container .top-right {
   width: 70%;
   height: 100%;
-  padding: 8%;
+  padding: 3% 8%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -228,7 +229,7 @@ p {
   border-radius: 5px;
   color: white;
   letter-spacing: 0.4rem;
-  margin-bottom: 7%;
+  margin: 1rem 0 3rem 0;
 }
 @media (max-width: 600px) {
 }
@@ -238,10 +239,11 @@ p {
   text-align: center;
   line-height: 2rem;
   letter-spacing: 0.1rem;
+  margin-bottom: 3rem;
 }
 .top-container .top-right .react-app-btns {
   width: 100%;
-  margin: 10% 0 20% 0;
+  margin: 5% 0 10% 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -348,6 +350,7 @@ p {
   display: inline-block;
   line-height: 2rem;
   padding: 2rem;
+  font-size: 1rem;
 }
 #features .features-container .card img {
   border-radius: 10px;
