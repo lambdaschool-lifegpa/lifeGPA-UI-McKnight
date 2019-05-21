@@ -132,7 +132,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+a {
   font-family: 'Roboto', sans-serif;
 }
 h1 {
@@ -163,8 +164,41 @@ p {
   height: 100%;
   max-width: 50%;
 }
-.top-container .top-img img {
+@media (max-width: 600px) {
+  .top-container .top-img {
+    width: 100%;
+  }
+}
+.top-container .top-img .desktop {
   height: 100%;
+}
+@media (max-width: 1400px) {
+  .top-container .top-img .desktop {
+    display: none;
+  }
+}
+.top-container .top-img .tablet {
+  display: none;
+}
+@media (max-width: 1400px) {
+  .top-container .top-img .tablet {
+    display: block;
+    height: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .top-container .top-img .tablet {
+    display: none;
+  }
+}
+.top-container .top-img .mobile {
+  display: none;
+}
+@media (max-width: 600px) {
+  .top-container .top-img .mobile {
+    display: block;
+    width: 100%;
+  }
 }
 .top-container .top-right {
   width: 70%;
@@ -178,11 +212,11 @@ p {
 .top-container .top-right h1 {
   display: inline-block;
   border: 5px solid white;
-  padding: 1rem;
+  padding: 1rem 3rem;
   border-radius: 5px;
   color: white;
-  letter-spacing: 0.2rem;
-  margin-bottom: 5%;
+  letter-spacing: 0.4rem;
+  margin-bottom: 7%;
 }
 .top-container .top-right p {
   display: inline-block;
@@ -199,19 +233,32 @@ p {
   align-items: center;
   justify-content: space-around;
 }
-.top-container .top-right .react-app-btns h2 {
+.top-container .top-right .react-app-btns a {
   color: white;
   display: inline-block;
   border: 3px solid white;
   padding: 1rem 3rem;
   border-radius: 5px;
+  font-size: 2rem;
+  text-decoration: none;
+}
+.top-container .top-right .react-app-btns a:hover {
+  background: white;
+  color: #34363a;
 }
 .top-container .top-right h4 {
   color: white;
   display: inline-block;
   margin: 20% 0 5% 0;
 }
+.top-container .top-right h4:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
 .top-container .top-right .arrow {
   justify-self: flex-end;
   margin-bottom: -5%;
+}
+.top-container .top-right .arrow:hover {
+  cursor: pointer;
 }
