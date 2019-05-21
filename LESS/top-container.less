@@ -1,5 +1,6 @@
 .top-container {
     height: 100vh;
+    width: 100vw;
     .flex(row, center, center);
     background: linear-gradient(#61676d, #34363a, #1f2123);
       
@@ -9,7 +10,11 @@
         max-width: 50%;
 
         @media @mobile {
+            height: 100%;
             width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
         }
 
   
@@ -38,8 +43,12 @@
                 display: none;
 
                 @media @mobile {
-                    display: block;
-                    width: 100%;
+                    display: flex;
+                    width: 700px;
+                    height: auto;
+                    left: 0;
+                    
+                   
                 }
             }
        }
@@ -52,6 +61,10 @@
         padding: 8%;
         .flex(column, center, center);
 
+        @media @mobile {
+            z-index: 2;
+        }
+
         h1 {
             display: inline-block;
             .border(5px, white);
@@ -60,6 +73,10 @@
             color: white;
             letter-spacing: .4rem;
             margin-bottom: 7%;
+
+            @media @mobile {
+                // margin-top: -10%;
+            }
         }
 
         p {
@@ -72,7 +89,7 @@
 
         .react-app-btns {
             width: 100%;
-            margin-top: 10%;
+            margin: 10% 0 20% 0;
             .flex(row, center, space-around);
 
             a {
@@ -83,6 +100,11 @@
                 border-radius: 5px;
                 font-size: 2rem;
                 text-decoration: none;
+
+                @media @small-desktop {
+                    font-size: 1.5rem;
+                    padding: 1rem 2.5rem;
+                }
 
                 &:hover {
                     background: white;
@@ -95,7 +117,11 @@
         h4 {
             color: white;
             display: inline-block;
-            margin: 20% 0 5% 0;
+            margin: 20% 0 20% 0;
+
+            @media @mobile {
+                margin: 25% 0 35% 0;
+            }
 
             &:hover {
                 cursor: pointer;
@@ -105,7 +131,10 @@
 
         .arrow {
           justify-self: flex-end;
-          margin-bottom: -5%;
+
+          @media @mobile {
+            //   margin-bottom: -5%;
+          }
 
           &:hover {
               cursor: pointer;
