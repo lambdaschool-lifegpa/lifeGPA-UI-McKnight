@@ -5,10 +5,11 @@
 
   h1 {
     color: white;
+    text-shadow: 2px 2px 5px @gold;
   }
 
   .carousel {
-    width: 85%;
+    width: 65%;
     .flex(row, center, center);
     position: relative;
     overflow: hidden;
@@ -58,7 +59,7 @@
       }
 
       img {
-        width: 45%;
+        width: 50%;
         object-fit: scale-down;
       }
 
@@ -67,6 +68,29 @@
         width: 50%;
         color: white;
         padding: 3rem;
+
+        h2 {
+          display: inline-block;
+          font-size: 3rem;
+          text-shadow: 3px 3px 2px @gold;
+          margin-bottom: 3rem;
+          text-align: center;
+        }
+
+        h3 {
+          display: inline-block;
+          margin-bottom: 2rem;
+          font-size: 2rem;
+        }
+
+        img {
+          width: 3rem;
+
+          &:hover {
+            opacity: 0.6;
+            cursor: pointer;
+          }
+        }
       }
     }
   }

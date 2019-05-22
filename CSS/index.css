@@ -315,6 +315,7 @@ html {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  background-color: #ffa323;
 }
 @media (max-width: 800px) {
   #features {
@@ -432,9 +433,10 @@ html {
 }
 .team h1 {
   color: white;
+  text-shadow: 2px 2px 5px #ffa323;
 }
 .team .carousel {
-  width: 85%;
+  width: 65%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -493,7 +495,7 @@ html {
   }
 }
 .team .carousel .person img {
-  width: 45%;
+  width: 50%;
   object-fit: scale-down;
 }
 .team .carousel .person .person-text {
@@ -504,4 +506,23 @@ html {
   width: 50%;
   color: white;
   padding: 3rem;
+}
+.team .carousel .person .person-text h2 {
+  display: inline-block;
+  font-size: 3rem;
+  text-shadow: 3px 3px 2px #ffa323;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.team .carousel .person .person-text h3 {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.team .carousel .person .person-text img {
+  width: 3rem;
+}
+.team .carousel .person .person-text img:hover {
+  opacity: 0.6;
+  cursor: pointer;
 }
