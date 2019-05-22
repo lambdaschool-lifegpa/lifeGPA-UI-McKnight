@@ -148,6 +148,9 @@ h4 {
 p {
   font-size: 1.2rem;
 }
+html {
+  scroll-behavior: smooth;
+}
 .top-container {
   height: 100vh;
   width: 100vw;
@@ -300,7 +303,7 @@ p {
 }
 @media (max-width: 800px) {
   #features {
-    height: 200rem;
+    height: auto;
   }
 }
 #features .features-container {
@@ -336,8 +339,9 @@ p {
 }
 @media (max-width: 800px) {
   #features .features-container .card {
-    height: 20%;
     border-bottom: 1px dashed white;
+    flex-direction: column wrap;
+    justify-content: space-around;
   }
 }
 #features .features-container .card .card-text {
@@ -351,7 +355,6 @@ p {
 }
 @media (max-width: 800px) {
   #features .features-container .card .card-text {
-    height: 30%;
     margin-top: 8rem;
   }
 }
@@ -382,8 +385,23 @@ p {
   -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
   clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
 }
+@media (max-width: 800px) {
+  #features .features-container .card img {
+    width: 70%;
+    margin: 2rem 0 1rem 0;
+  }
+}
+#features .features-container .card1 {
+  border-top: 1px dashed white;
+}
+#features .features-container .card3 {
+  border: none;
+}
 .description img {
   max-width: 100vw;
+}
+.description h1 {
+  text-align: center;
 }
 .team {
   display: flex;
@@ -439,7 +457,6 @@ p {
 }
 .team .carousel img {
   width: 90%;
-  border-radius: 15px;
   object-fit: scale-down;
   display: none;
 }

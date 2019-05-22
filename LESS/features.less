@@ -4,7 +4,7 @@
     .flex(row, center, center);
 
     @media @tablet {
-        height: 200rem;
+        height: auto;
     }
 
 
@@ -32,8 +32,10 @@
           letter-spacing: .1rem;
 
           @media @tablet {
-              height: 20%;
+            //   height: 20%;
               border-bottom: 1px dashed white;
+              flex-direction: column wrap;
+              justify-content: space-around;
           }
 
           .card-text {
@@ -46,7 +48,7 @@
               }
 
               @media @tablet{
-                  height: 30%;
+                //   height: 30%;
                   margin-top: 8rem;
               }
 
@@ -80,8 +82,21 @@
             width: 80%;
             -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
             clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+
+            @media @tablet {
+                width: 70%;
+                margin: 2rem 0 1rem 0;
+            }
           }
 
+      }
+
+      .card1 {
+          border-top: 1px dashed white;
+      }
+
+      .card3 {
+          border: none;
       }
     }
 }
