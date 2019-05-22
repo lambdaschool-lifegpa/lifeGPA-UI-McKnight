@@ -9,7 +9,11 @@
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
     <link href="CSS/index.css" rel="stylesheet" />
+    <script src="team.js" async></script>
+
   </head>
   <body>
     <div class="top-container">
@@ -35,31 +39,34 @@
 
     <div id="features">
       <div class="features-container">
-        <div class="card">
-          <h2>Enhance Creative Productivity</h2>
+        <div class="card card1">
+          <div class="card-text">
+            <h2>Enhance Creative Productivity</h2>
           <p>
-            Lorem ipsum dolor amet disrupt pour-over PBR&B selfies truffaut
-            try-hard skateboard portland cardigan tumblr keffiyeh.
+            Keep track of your productivity, be it creative, business-related, volunteering or in any other area of life. Positive reinforcement helps make it easier to stay motivated and on track.
           </p>
+        </div>
           <img src="Images/creative.jpg" />
 
         </div>
 
         <div class="card">
+          <div class="card-text">
           <h2>Implement a Healtier Lifestyle</h2>
           <p>
-            Lorem ipsum dolor amet disrupt pour-over PBR&B selfies truffaut
-            try-hard skateboard portland cardigan tumblr keffiyeh.
+            Make consious decisions to track your lifestyle via "habits". It's up to you which habits you'd like to implement to be a healthier version of yourself. 
           </p>
+        </div>
           <img src="Images/health.jpg" />
         </div>
 
         <div class="card">
+          <div class="card-text">
           <h2>Start Living the Life You Want</h2>
           <p>
-            Lorem ipsum dolor amet disrupt pour-over PBR&B selfies truffaut
-            try-hard skateboard portland cardigan tumblr keffiyeh.
+            We know you're already awesome. But there's always room to grow. Let us help you put your plan into motion NOW and you'll start seeing & feeling the results before you know it!
           </p>
+        </div>
           <img src="Images/travel.jpg" />
         </div>
       </div>
@@ -67,11 +74,25 @@
 
 
    <div class="description">
-
+    <div id="free-img">
+      <img src="Images/free.jpg" />
+    </div>
    </div>
 
 
-
+   <div class="team">
+      <div class="carousel">
+          <div class="left-button"><</div>
+          <img class="img" src="Images/health.jpg" />
+          <img class="img" src="Images/travel.jpg" />
+          <img class="img" src="Images/creative.jpg" />
+          <img class="img" src="Images/health.jpg" />
+          <img class="img" src="Images/travel.jpg" />
+          <img class="img" src="Images/creative.jpg" />
+          <img class="img" src="Images/health.jpg" />
+          <div class="right-button">></div>
+        </div>
+   </div>
 
   </body>
 </html>
