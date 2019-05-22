@@ -31,7 +31,7 @@ class Carousel {
             img.style.display = "none";
         });
         image.style.display = "inline";
-        image.style.zIndex = "-2";
+        // image.style.zIndex = "-2";
         TweenMax.from(image, 0.8, {x: 1000});
         
         console.log("image", image);
