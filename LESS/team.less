@@ -1,58 +1,73 @@
-
 .team {
+  .flex(column, center, center);
+  background-color: @dark;
+  padding: 3rem 0 0 0;
+
+  h1 {
+    color: white;
+  }
+
+  .carousel {
+    width: 85%;
     .flex(row, center, center);
-    background-color: @dark;
-    margin-top: -0.5rem;
+    position: relative;
+    overflow: hidden;
+    margin: 3rem 0 5rem 0;
+    @media @small-desktop {
+    }
 
+    .left-button,
+    .right-button {
+      .flex(row, center, center);
+      color: white;
+      background-color: @gold;
+      font-size: 2rem;
+      border-radius: 50%;
+      position: absolute;
+      width: 3rem;
+      height: 3rem;
+      cursor: pointer;
+      &:hover {
+        color: @gold;
+        background-color: white;
+        border: 2px solid @gold;
+      }
+    }
+    .left-button {
+      top: 50%;
+      left: 0rem;
+      transform: translate(0, -50%);
+      z-index: 2;
+    }
+    .right-button {
+      top: 50%;
+      right: 0rem;
+      transform: translate(0, -50%);
+    }
+    .person {
+      width: 90%;
+      object-fit: scale-down;
+      display: none;
+      .flex(row, center, center);
+      flex-wrap: nowrap;
+      background-color: #61676d;
+      border-radius: 15px;
 
-    .carousel {
-        width: 85%;
-        .flex(row, center, center);
-        // height: 300px;
-        position: relative;
-        overflow: hidden;
-        margin: 5rem 0 5rem 0;
-        @media @small-desktop {
-        //   width: 1200px;
-        }
-    
-        .left-button, .right-button {
-          .flex(row, center, center);
-          color: white;
-          background-color: @gold;
-          font-size: 2rem;
-          border-radius: 50%;
-          position: absolute;
-          width: 3rem;
-          height: 3rem;
-          cursor: pointer;
-          &:hover {
-            color: @gold;
-            background-color: white;
-            border: 2px solid @gold;
-          }
-        }
-        .left-button {
-          top: 50%; 
-          left: 0rem;
-          transform: translate(0, -50%);
-          z-index: 2;
-        }
-        .right-button {
-          top: 50%; 
-          right: 0rem;
-          transform: translate(0, -50%);
-        }
-        img {
-          width: 90%;
-          // border-radius: 15px;
-          object-fit: scale-down;
-          display: none;
-        }
+      @media @tablet {
+        width: 75%;
       }
 
+      img {
+        width: 45%;
+        object-fit: scale-down;
+      }
 
+      .person-text {
+        .flex(column, center, center);
+        width: 50%;
+        color: white;
+        padding: 3rem;
+      }
+    }
+  }
 }
-
-
-

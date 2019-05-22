@@ -227,7 +227,8 @@ html {
 }
 .top-container .top-right h1 {
   display: inline-block;
-  border: 5px solid white;
+  border: 4px solid white;
+  box-shadow: 10px 10px #ffa323;
   padding: 1rem 3rem;
   border-radius: 5px;
   color: white;
@@ -235,6 +236,10 @@ html {
   margin: 1rem 0 3rem 0;
 }
 @media (max-width: 600px) {
+  .top-container .top-right h1 {
+    padding: 1rem 1rem;
+    font-size: 3rem;
+  }
 }
 .top-container .top-right p {
   display: inline-block;
@@ -243,6 +248,11 @@ html {
   line-height: 2rem;
   letter-spacing: 0.1rem;
   margin-bottom: 3rem;
+}
+@media (max-width: 600px) {
+  .top-container .top-right p {
+    font-size: 1rem;
+  }
 }
 .top-container .top-right .react-app-btns {
   width: 100%;
@@ -256,6 +266,7 @@ html {
   color: white;
   display: inline-block;
   border: 3px solid white;
+  box-shadow: 8px 8px #ffa323;
   padding: 1rem 3rem;
   border-radius: 5px;
   font-size: 2rem;
@@ -265,6 +276,12 @@ html {
   .top-container .top-right .react-app-btns a {
     font-size: 1.5rem;
     padding: 1rem 2.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .top-container .top-right .react-app-btns a {
+    font-size: 1rem;
+    padding: 1rem;
   }
 }
 .top-container .top-right .react-app-btns a:hover {
@@ -287,8 +304,6 @@ html {
 }
 .top-container .top-right .arrow {
   justify-self: flex-end;
-}
-@media (max-width: 600px) {
 }
 .top-container .top-right .arrow:hover {
   cursor: pointer;
@@ -339,14 +354,15 @@ html {
 }
 @media (max-width: 800px) {
   #features .features-container .card {
-    border-bottom: 1px dashed white;
+    border-bottom: 1px dashed #ffa323;
     flex-direction: column wrap;
     justify-content: space-around;
   }
 }
 #features .features-container .card .card-text {
   height: 45%;
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
+  padding: 1.2rem;
 }
 @media (max-width: 1400px) {
   #features .features-container .card .card-text {
@@ -355,13 +371,14 @@ html {
 }
 @media (max-width: 800px) {
   #features .features-container .card .card-text {
-    margin-top: 8rem;
+    margin-top: 3rem;
   }
 }
 #features .features-container .card .card-text h2 {
   color: white;
   display: inline-block;
   line-height: 3rem;
+  text-shadow: 1.5px 1.5px 3px #ffa323;
 }
 @media (max-width: 1400px) {
   #features .features-container .card .card-text h2 {
@@ -391,8 +408,10 @@ html {
     margin: 2rem 0 1rem 0;
   }
 }
-#features .features-container .card1 {
-  border-top: 1px dashed white;
+@media (max-width: 800px) {
+  #features .features-container .card1 {
+    border-top: 1px dashed #ffa323;
+  }
 }
 #features .features-container .card3 {
   border: none;
@@ -405,11 +424,14 @@ html {
 }
 .team {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #1f2123;
-  margin-top: -0.5rem;
+  padding: 3rem 0 0 0;
+}
+.team h1 {
+  color: white;
 }
 .team .carousel {
   width: 85%;
@@ -419,9 +441,7 @@ html {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  margin: 5rem 0 5rem 0;
-}
-@media (max-width: 1400px) {
+  margin: 3rem 0 5rem 0;
 }
 .team .carousel .left-button,
 .team .carousel .right-button {
@@ -455,8 +475,33 @@ html {
   right: 0rem;
   transform: translate(0, -50%);
 }
-.team .carousel img {
+.team .carousel .person {
   width: 90%;
   object-fit: scale-down;
   display: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background-color: #61676d;
+  border-radius: 15px;
+}
+@media (max-width: 800px) {
+  .team .carousel .person {
+    width: 75%;
+  }
+}
+.team .carousel .person img {
+  width: 45%;
+  object-fit: scale-down;
+}
+.team .carousel .person .person-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  color: white;
+  padding: 3rem;
 }
