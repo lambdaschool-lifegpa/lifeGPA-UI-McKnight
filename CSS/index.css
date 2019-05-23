@@ -180,7 +180,7 @@ html {
 .top-container .top-img .desktop {
   height: 100%;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   .top-container .top-img .desktop {
     display: none;
   }
@@ -188,7 +188,7 @@ html {
 .top-container .top-img .tablet {
   display: none;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   .top-container .top-img .tablet {
     display: block;
     height: 100%;
@@ -228,12 +228,13 @@ html {
 .top-container .top-right h1 {
   display: inline-block;
   border: 4px solid white;
-  box-shadow: 10px 10px #ffa323;
+  box-shadow: 8px 8px #ffa323, 10px 15px 18px black;
   padding: 1rem 3rem;
   border-radius: 5px;
   color: white;
   letter-spacing: 0.4rem;
   margin: 1rem 0 3rem 0;
+  text-shadow: 3px 3px 5px black;
 }
 @media (max-width: 600px) {
   .top-container .top-right h1 {
@@ -248,6 +249,7 @@ html {
   line-height: 2rem;
   letter-spacing: 0.1rem;
   margin-bottom: 3rem;
+  text-shadow: 2.5px 2.5px 5px black;
 }
 @media (max-width: 600px) {
   .top-container .top-right p {
@@ -266,13 +268,14 @@ html {
   color: white;
   display: inline-block;
   border: 3px solid white;
-  box-shadow: 8px 8px #ffa323;
+  box-shadow: 6px 6px #ffa323, 6px 10px 5px black;
   padding: 1rem 3rem;
   border-radius: 5px;
   font-size: 2rem;
   text-decoration: none;
+  text-shadow: 2.5px 2.5px 3px black;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   .top-container .top-right .react-app-btns a {
     font-size: 1.5rem;
     padding: 1rem 2.5rem;
@@ -286,16 +289,19 @@ html {
 }
 .top-container .top-right .react-app-btns a:hover {
   background: white;
-  color: #34363a;
+  color: #1f2123;
+  text-shadow: 1px 1px 5px #ffa323;
 }
 .top-container .top-right h4 {
   color: white;
   display: inline-block;
   margin: 20% 0 20% 0;
+  text-shadow: 2.5px 2.5px 5px black;
 }
 @media (max-width: 600px) {
   .top-container .top-right h4 {
     margin: 25% 0 35% 0;
+    font-size: 1.4rem;
   }
 }
 .top-container .top-right h4:hover {
@@ -365,7 +371,7 @@ html {
   margin-top: 0.5rem;
   padding: 1.2rem;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   #features .features-container .card .card-text {
     height: 55%;
   }
@@ -381,7 +387,7 @@ html {
   line-height: 3rem;
   text-shadow: 1.5px 1.5px 3px #ffa323;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   #features .features-container .card .card-text h2 {
     font-size: 1.5rem;
   }
@@ -393,7 +399,7 @@ html {
   padding: 1rem 2rem;
   font-size: 1rem;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   #features .features-container .card .card-text p {
     font-size: 0.8rem;
   }
@@ -412,6 +418,7 @@ html {
 @media (max-width: 800px) {
   #features .features-container .card1 {
     border-top: 1px dashed #ffa323;
+    margin-top: 8rem;
   }
 }
 #features .features-container .card3 {
@@ -434,6 +441,7 @@ html {
 .team h1 {
   color: white;
   text-shadow: 2px 2px 5px #ffa323;
+  text-align: center;
 }
 .team .carousel {
   width: 65%;
@@ -445,13 +453,18 @@ html {
   overflow: hidden;
   margin: 3rem 0 5rem 0;
 }
+@media (max-width: 800px) {
+  .team .carousel {
+    width: 90%;
+  }
+}
 .team .carousel .left-button,
 .team .carousel .right-button {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #1f2123;
   background-color: #ffa323;
   font-size: 2rem;
   border-radius: 50%;
@@ -462,9 +475,8 @@ html {
 }
 .team .carousel .left-button:hover,
 .team .carousel .right-button:hover {
-  color: #ffa323;
-  background-color: white;
-  border: 2px solid #ffa323;
+  color: #000000;
+  opacity: 0.7;
 }
 .team .carousel .left-button {
   top: 50%;
@@ -486,7 +498,7 @@ html {
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
-  background-color: #61676d;
+  background-color: #373b3e;
   border-radius: 15px;
 }
 @media (max-width: 800px) {
@@ -494,9 +506,19 @@ html {
     width: 75%;
   }
 }
+@media (max-width: 600px) {
+  .team .carousel .person {
+    flex-direction: column;
+  }
+}
 .team .carousel .person img {
   width: 50%;
   object-fit: scale-down;
+}
+@media (max-width: 600px) {
+  .team .carousel .person img {
+    margin-top: 2rem;
+  }
 }
 .team .carousel .person .person-text {
   display: flex;
@@ -507,17 +529,36 @@ html {
   color: white;
   padding: 3rem;
 }
+@media (max-width: 800px) {
+  .team .carousel .person .person-text {
+    padding: 1rem;
+  }
+}
 .team .carousel .person .person-text h2 {
   display: inline-block;
   font-size: 3rem;
-  text-shadow: 3px 3px 2px #ffa323;
+  text-shadow: 2.5px 2.5px 2px #ffa323, 5px 5px 5px #1f2123;
   margin-bottom: 3rem;
   text-align: center;
+}
+@media (max-width: 600px) {
+  .team .carousel .person .person-text h2 {
+    margin-bottom: 2rem;
+    font-size: 2.8rem;
+  }
 }
 .team .carousel .person .person-text h3 {
   display: inline-block;
   margin-bottom: 2rem;
   font-size: 2rem;
+  text-align: center;
+  text-shadow: 4px 4px 5px #1f2123;
+}
+@media (max-width: 600px) {
+  .team .carousel .person .person-text h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+  }
 }
 .team .carousel .person .person-text img {
   width: 3rem;

@@ -64,12 +64,13 @@
     h1 {
       display: inline-block;
       .border(4px, white);
-      box-shadow: 10px 10px @gold;
+      box-shadow: 8px 8px @gold, 10px 15px 18px black;
       padding: 1rem 3rem;
       border-radius: 5px;
       color: white;
       letter-spacing: 0.4rem;
       margin: 1rem 0 3rem 0;
+      text-shadow: 3px 3px 5px black;
 
       @media @mobile {
         padding: 1rem 1rem;
@@ -84,6 +85,7 @@
       line-height: 2rem;
       letter-spacing: 0.1rem;
       margin-bottom: 3rem;
+      text-shadow: 2.5px 2.5px 5px black;
 
       @media @mobile {
         font-size: 1rem;
@@ -99,11 +101,12 @@
         color: white;
         display: inline-block;
         .border(3px, white);
-        box-shadow: 8px 8px @gold;
+        box-shadow: 6px 6px @gold, 6px 10px 5px black;
         padding: 1rem 3rem;
         border-radius: 5px;
         font-size: 2rem;
         text-decoration: none;
+        text-shadow: 2.5px 2.5px 3px black;
 
         @media @small-desktop {
           font-size: 1.5rem;
@@ -117,7 +120,8 @@
 
         &:hover {
           background: white;
-          color: #34363a;
+          color: @dark;
+          text-shadow: 1px 1px 5px @gold;
         }
       }
     }
@@ -126,9 +130,11 @@
       color: white;
       display: inline-block;
       margin: 20% 0 20% 0;
+      text-shadow: 2.5px 2.5px 5px black;
 
       @media @mobile {
         margin: 25% 0 35% 0;
+        font-size: 1.4rem;
       }
 
       &:hover {
