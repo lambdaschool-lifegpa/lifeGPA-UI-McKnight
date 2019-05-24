@@ -297,6 +297,7 @@ html {
   display: inline-block;
   margin: 20% 0 20% 0;
   text-shadow: 2.5px 2.5px 5px black;
+  font-size: 1.2rem;
 }
 @media (max-width: 600px) {
   .top-container .top-right h4 {
@@ -594,4 +595,10 @@ html {
 .team .carousel .person .person-text img:hover {
   opacity: 0.6;
   cursor: pointer;
+}
+footer {
+  background-color: #1f2123;
+  color: white;
+  padding: 2rem;
+  text-align: center;
 }
