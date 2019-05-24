@@ -1,0 +1,117 @@
+#features {
+  min-height: 100vh;
+  width: 100vw;
+  .flex(row, center, center);
+  background-color: @gold;
+
+  @media @tablet {
+    height: auto;
+  }
+
+  .features-container {
+    background-color: @dark;
+    .flex(row, center, center);
+    height: 90%;
+    width: 100%;
+    padding: 2rem 2rem;
+
+    @media @tablet {
+      .flex(column, center, center);
+      margin-top: 0rem;
+      height: 100%;
+    }
+
+    .features-card {
+      height: 100%;
+      width: 100%;
+      .flex(column, center, flex-start);
+      padding: 2rem 0 4rem 0;
+      text-align: center;
+      letter-spacing: 0.1rem;
+
+      @media @tablet {
+        border-bottom: 1px dashed @gold;
+        flex-direction: column wrap;
+        justify-content: space-around;
+      }
+
+      .card-text {
+        height: 45%;
+        margin-top: .5rem;
+        padding: 1.2rem;
+
+        @media @small-desktop {
+          height: 55%;
+        }
+
+        @media @tablet {
+          margin-top: 3rem;
+        }
+
+        h2 {
+          color: white;
+          display: inline-block;
+          line-height: 3rem;
+          text-shadow: 1.5px 1.5px 3px @gold;
+
+          @media @small-desktop {
+            font-size: 1.5rem;
+          }
+        }
+
+        p {
+          color: white;
+          display: inline-block;
+          line-height: 2rem;
+          padding: 1rem 2rem;
+          font-size: 1rem;
+
+          @media @small-desktop {
+            font-size: 0.8rem;
+          }
+        }
+      }
+
+      img {
+        width: 80%;
+        -webkit-clip-path: polygon(
+          20% 0%,
+          80% 0%,
+          100% 20%,
+          100% 80%,
+          80% 100%,
+          20% 100%,
+          0% 80%,
+          0% 20%
+        );
+        clip-path: polygon(
+          20% 0%,
+          80% 0%,
+          100% 20%,
+          100% 80%,
+          80% 100%,
+          20% 100%,
+          0% 80%,
+          0% 20%
+        );
+
+        @media @tablet {
+          width: 70%;
+          margin: 2rem 0 1rem 0;
+        }
+      }
+    }
+
+    .card1 {
+
+        @media @tablet {
+            border-top: 1px dashed @gold;
+            margin-top: 8rem;
+        }
+    }
+
+    .card3 {
+      border: none;
+    }
+  }
+}

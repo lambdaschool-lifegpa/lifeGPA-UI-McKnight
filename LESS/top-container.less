@@ -1,0 +1,154 @@
+.top-container {
+  height: 100vh;
+  width: 100vw;
+  .flex(row, center, center);
+  background: linear-gradient(#61676d, #34363a, @dark);
+
+  .top-img {
+    .flex(column, flex-start, flex-start);
+    height: 100%;
+    max-width: 50%;
+
+    @media @mobile {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .desktop {
+      height: 100%;
+
+      @media @small-desktop {
+        display: none;
+      }
+    }
+
+    .tablet {
+      display: none;
+
+      @media @small-desktop {
+        display: block;
+        height: 100%;
+      }
+
+      @media @tablet {
+        display: none;
+      }
+    }
+
+    .mobile {
+      display: none;
+
+      @media @mobile {
+        display: flex;
+        width: 600px;
+        height: auto;
+        left: 0;
+        max-width: 100vw;
+      }
+    }
+  }
+
+  .top-right {
+    width: 70%;
+    height: 100%;
+    padding: 3% 8%;
+    .flex(column, center, center);
+
+    @media @mobile {
+      z-index: 2;
+    }
+
+    h1 {
+      display: inline-block;
+      .border(4px, white);
+      box-shadow: 8px 8px @gold, 10px 15px 18px black;
+      padding: 1rem 3rem;
+      border-radius: 5px;
+      color: white;
+      letter-spacing: 0.4rem;
+      margin: 1rem 0 3rem 0;
+      text-shadow: 3px 3px 5px black;
+
+      @media @mobile {
+        padding: 1rem 1rem;
+        font-size: 3rem;
+      }
+    }
+
+    p {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      line-height: 2rem;
+      letter-spacing: 0.1rem;
+      margin-bottom: 3rem;
+      text-shadow: 2.5px 2.5px 5px black;
+
+      @media @mobile {
+        font-size: 1rem;
+      }
+    }
+
+    .react-app-btns {
+      width: 100%;
+      margin: 5% 0 10% 0;
+      .flex(row, center, space-around);
+
+      a {
+        color: white;
+        display: inline-block;
+        .border(3px, white);
+        box-shadow: 6px 6px @gold, 6px 10px 5px black;
+        padding: 1rem 3rem;
+        border-radius: 5px;
+        font-size: 2rem;
+        text-decoration: none;
+        text-shadow: 2.5px 2.5px 3px black;
+
+        @media @small-desktop {
+          font-size: 1.5rem;
+          padding: 1rem 2.5rem;
+        }
+
+        @media @mobile {
+          font-size: 1rem;
+          padding: 1rem;
+        }
+
+        &:hover {
+          background: white;
+          color: @dark;
+          text-shadow: 1px 1px 5px @gold;
+        }
+      }
+    }
+
+    h4 {
+      color: white;
+      display: inline-block;
+      margin: 20% 0 20% 0;
+      text-shadow: 2.5px 2.5px 5px black;
+      font-size: 1.2rem;
+
+      @media @mobile {
+        margin: 25% 0 35% 0;
+        font-size: 1.4rem;
+      }
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.7;
+      }
+    }
+
+    .arrow {
+      justify-self: flex-end;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
